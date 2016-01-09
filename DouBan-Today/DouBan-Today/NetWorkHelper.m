@@ -6,11 +6,8 @@
 //  Copyright © 2016年 wey. All rights reserved.
 //
 
-#import "NetWorkHelper.h"
-
+#import "MBProgressHUD.h"
 @implementation NetWorkHelper
-
-
 
 + (instancetype) shareInstance {
     
@@ -38,5 +35,28 @@
     }] resume];
     
 }
+
++ (void) createHudWith:(NSString *)title {
+    UIWindow *keyWindow = [[UIApplication sharedApplication] keyWindow];
+    MBProgressHUD *hud = [[MBProgressHUD alloc]initWithWindow:keyWindow];
+    [keyWindow addSubview:hud];
+    hud.mode = MBProgressHUDModeText;
+    hud.labelText = title;
+    [hud showAnimated:YES whileExecutingBlock:^{
+        sleep(1);
+    } completionBlock:^{
+        [hud removeFromSuperview];
+    }];
+}
+
+- (id) createHud {
+
+    UIWindow *keyWindow = [[UIApplication sharedApplication] keyWindow];
+    MBProgressHUD *hud = [[MBProgressHUD alloc]initWithWindow:keyWindow];
+    [keyWindow addSubview:hud];
+    [hud show:YES];
+    return hud;
+}
+
 
 @end

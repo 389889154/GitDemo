@@ -13,5 +13,9 @@
 
 + (instancetype) shareInstance;
 
++ (void) createHudWith:(NSString *)title;
+
+- (id) createHud;
+
 - (void) getDataWithUrlString:(NSString *)urlStr success:(void(^)(NSDictionary * dic))successBlock fail:(void(^)())failBlock;
 @end

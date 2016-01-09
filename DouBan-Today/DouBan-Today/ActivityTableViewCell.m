@@ -15,7 +15,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *locLabel;
 @property (weak, nonatomic) IBOutlet UILabel *typeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *countLabel;
-@property (weak, nonatomic) IBOutlet UIImageView *iconView;
+
 
 
 

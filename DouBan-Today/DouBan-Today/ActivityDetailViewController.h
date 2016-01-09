@@ -1,14 +1,14 @@
 //
-//  ActivityTableViewCell.h
+//  ActivityDetailViewController.h
 //  DouBan-Today
 //
-//  Created by lanou3g on 16/1/8.
+//  Created by lanou3g on 16/1/9.
 //  Copyright © 2016年 wey. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 @class ActivityModel;
-@interface ActivityTableViewCell : UITableViewCell
+@interface ActivityDetailViewController : UIViewController
 @property (nonatomic, strong) ActivityModel *model;
-@property (weak, nonatomic) IBOutlet UIImageView *iconView;
+@property (nonatomic, strong) UIImage *img;
 @end

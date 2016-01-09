@@ -10,4 +10,5 @@
 @class MovieModel;
 @interface MovieTableViewCell : UITableViewCell
 @property (nonatomic, strong) MovieModel *model;
+@property (weak, nonatomic) IBOutlet UIImageView *iconView;
 @end

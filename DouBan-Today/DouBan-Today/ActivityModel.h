@@ -20,6 +20,9 @@
 @property (nonatomic, copy) NSString * wisher_count;
 @property (nonatomic, copy) NSString * name;
 
+@property (nonatomic, copy) NSString *content;
+
+
 + (instancetype)activityWithDic:(NSDictionary *)dic;
 
 

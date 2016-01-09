@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C2122A7D1C40D0E7009A13F6 /* RegistTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2122A7C1C40D0E7009A13F6 /* RegistTableViewController.m */; };
+		C2122A801C40DE9F009A13F6 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C2122A7F1C40DE9F009A13F6 /* MBProgressHUD.m */; };
+		C2122A841C40F2DE009A13F6 /* ActivityDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2122A831C40F2DE009A13F6 /* ActivityDetailViewController.m */; };
+		C2122A871C410A34009A13F6 /* MovieNextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2122A861C410A34009A13F6 /* MovieNextViewController.m */; };
+		C2122A8C1C410D24009A13F6 /* MovieDetal.m in Sources */ = {isa = PBXBuildFile; fileRef = C2122A8B1C410D24009A13F6 /* MovieDetal.m */; };
 		C25779AE1C40974F00EC4466 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = C25779AD1C40974F00EC4466 /* User.m */; };
 		C2FBCA141C3FC84D00B244D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2FBCA131C3FC84D00B244D8 /* main.m */; };
 		C2FBCA171C3FC84D00B244D8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2FBCA161C3FC84D00B244D8 /* AppDelegate.m */; };
@@ -56,7 +61,7 @@
 		C2FBCAA01C3FC9FF00B244D8 /* User_Profiles_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FBCA741C3FC9FF00B244D8 /* User_Profiles_bg@2x.png */; };
 		C2FBCAA11C3FC9FF00B244D8 /* bg-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FBCA761C3FC9FF00B244D8 /* bg-568h@2x.png */; };
 		C2FBCAA21C3FC9FF00B244D8 /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FBCA771C3FC9FF00B244D8 /* bg@2x.png */; };
-		C2FBCAA31C3FC9FF00B244D8 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FBCA781C3FC9FF00B244D8 /* icon@2x.png */; };
+		C2FBCAA31C3FC9FF00B244D8 /* i0con@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FBCA781C3FC9FF00B244D8 /* i0con@2x.png */; };
 		C2FBCAAC1C3FCB9100B244D8 /* ActivityTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2FBCAAB1C3FCB9100B244D8 /* ActivityTableViewController.m */; };
 		C2FBCAAF1C3FCB9B00B244D8 /* MovieTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2FBCAAE1C3FCB9B00B244D8 /* MovieTableViewController.m */; };
 		C2FBCAB21C3FCBA400B244D8 /* CinemaTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2FBCAB11C3FCBA400B244D8 /* CinemaTableViewController.m */; };
@@ -90,7 +95,6 @@
 		C2FBCB101C3FF64400B244D8 /* CinemaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2FBCB0E1C3FF64400B244D8 /* CinemaTableViewCell.xib */; };
 		C2FBCB131C3FF66500B244D8 /* CinemaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C2FBCB121C3FF66500B244D8 /* CinemaModel.m */; };
 		C2FBCB171C3FFCB400B244D8 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2FBCB161C3FFCB400B244D8 /* LoginViewController.m */; };
-		C2FBCB1A1C3FFCC500B244D8 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2FBCB191C3FFCC500B244D8 /* RegisterViewController.m */; };
 		C2FBCB291C40017F00B244D8 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = C2FBCB1F1C40017F00B244D8 /* FMDatabase.m */; };
 		C2FBCB2A1C40017F00B244D8 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C2FBCB211C40017F00B244D8 /* FMDatabaseAdditions.m */; };
 		C2FBCB2B1C40017F00B244D8 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = C2FBCB231C40017F00B244D8 /* FMDatabasePool.m */; };
@@ -103,6 +107,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C2122A7B1C40D0E7009A13F6 /* RegistTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistTableViewController.h; sourceTree = "<group>"; };
+		C2122A7C1C40D0E7009A13F6 /* RegistTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistTableViewController.m; sourceTree = "<group>"; };
+		C2122A7E1C40DE9F009A13F6 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		C2122A7F1C40DE9F009A13F6 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		C2122A821C40F2DE009A13F6 /* ActivityDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityDetailViewController.h; sourceTree = "<group>"; };
+		C2122A831C40F2DE009A13F6 /* ActivityDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityDetailViewController.m; sourceTree = "<group>"; };
+		C2122A851C410A34009A13F6 /* MovieNextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieNextViewController.h; sourceTree = "<group>"; };
+		C2122A861C410A34009A13F6 /* MovieNextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieNextViewController.m; sourceTree = "<group>"; };
+		C2122A8A1C410D24009A13F6 /* MovieDetal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieDetal.h; sourceTree = "<group>"; };
+		C2122A8B1C410D24009A13F6 /* MovieDetal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieDetal.m; sourceTree = "<group>"; };
 		C25779AC1C40974F00EC4466 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		C25779AD1C40974F00EC4466 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		C2FBCA0F1C3FC84D00B244D8 /* DouBan-Today.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DouBan-Today.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,7 +172,7 @@
 		C2FBCA741C3FC9FF00B244D8 /* User_Profiles_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "User_Profiles_bg@2x.png"; sourceTree = "<group>"; };
 		C2FBCA761C3FC9FF00B244D8 /* bg-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-568h@2x.png"; sourceTree = "<group>"; };
 		C2FBCA771C3FC9FF00B244D8 /* bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg@2x.png"; sourceTree = "<group>"; };
-		C2FBCA781C3FC9FF00B244D8 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		C2FBCA781C3FC9FF00B244D8 /* i0con@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i0con@2x.png"; sourceTree = "<group>"; };
 		C2FBCAAA1C3FCB9100B244D8 /* ActivityTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityTableViewController.h; sourceTree = "<group>"; };
 		C2FBCAAB1C3FCB9100B244D8 /* ActivityTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityTableViewController.m; sourceTree = "<group>"; };
 		C2FBCAAD1C3FCB9B00B244D8 /* MovieTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieTableViewController.h; sourceTree = "<group>"; };
@@ -222,8 +236,6 @@
 		C2FBCB121C3FF66500B244D8 /* CinemaModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CinemaModel.m; sourceTree = "<group>"; };
 		C2FBCB151C3FFCB400B244D8 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		C2FBCB161C3FFCB400B244D8 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		C2FBCB181C3FFCC500B244D8 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
-		C2FBCB191C3FFCC500B244D8 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		C2FBCB1E1C40017F00B244D8 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
 		C2FBCB1F1C40017F00B244D8 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
 		C2FBCB201C40017F00B244D8 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
@@ -256,6 +268,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C2122A811C40F265009A13F6 /* ActivityDetail */ = {
+			isa = PBXGroup;
+			children = (
+				C2122A821C40F2DE009A13F6 /* ActivityDetailViewController.h */,
+				C2122A831C40F2DE009A13F6 /* ActivityDetailViewController.m */,
+			);
+			name = ActivityDetail;
+			sourceTree = "<group>";
+		};
+		C2122A881C410C41009A13F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C2FBCAFF1C3FE83F00B244D8 /* MovieTableViewCell.h */,
+				C2FBCB001C3FE83F00B244D8 /* MovieTableViewCell.m */,
+				C2FBCB011C3FE83F00B244D8 /* MovieTableViewCell.xib */,
+				C2FBCB071C3FF16600B244D8 /* MovieCollectionViewCell.h */,
+				C2FBCB081C3FF16600B244D8 /* MovieCollectionViewCell.m */,
+				C2FBCB091C3FF16600B244D8 /* MovieCollectionViewCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C2122A891C410CFD009A13F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C2FBCAF91C3FE80500B244D8 /* MovieModel.h */,
+				C2FBCAFA1C3FE80500B244D8 /* MovieModel.m */,
+				C2122A8A1C410D24009A13F6 /* MovieDetal.h */,
+				C2122A8B1C410D24009A13F6 /* MovieDetal.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		C2FBCA061C3FC84B00B244D8 = {
 			isa = PBXGroup;
 			children = (
@@ -276,6 +321,7 @@
 		C2FBCA111C3FC84D00B244D8 /* DouBan-Today */ = {
 			isa = PBXGroup;
 			children = (
+				C2FBCA1B1C3FC84E00B244D8 /* Main.storyboard */,
 				C2FBCAA91C3FCB3F00B244D8 /* Classes */,
 				C2FBCAB71C3FCD5100B244D8 /* Utils */,
 				C2FBCAC31C3FD98900B244D8 /* Vendors */,
@@ -289,7 +335,6 @@
 		C2FBCA121C3FC84D00B244D8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C2FBCA1B1C3FC84E00B244D8 /* Main.storyboard */,
 				C2FBCA1E1C3FC84E00B244D8 /* Assets.xcassets */,
 				C2FBCA201C3FC84E00B244D8 /* LaunchScreen.storyboard */,
 				C2FBCA231C3FC84E00B244D8 /* Info.plist */,
@@ -426,7 +471,7 @@
 			children = (
 				C2FBCA761C3FC9FF00B244D8 /* bg-568h@2x.png */,
 				C2FBCA771C3FC9FF00B244D8 /* bg@2x.png */,
-				C2FBCA781C3FC9FF00B244D8 /* icon@2x.png */,
+				C2FBCA781C3FC9FF00B244D8 /* i0con@2x.png */,
 			);
 			path = "程序设置";
 			sourceTree = "<group>";
@@ -434,6 +479,7 @@
 		C2FBCAA51C3FCAFF00B244D8 /* Activity */ = {
 			isa = PBXGroup;
 			children = (
+				C2122A811C40F265009A13F6 /* ActivityDetail */,
 				C2FBCAAA1C3FCB9100B244D8 /* ActivityTableViewController.h */,
 				C2FBCAAB1C3FCB9100B244D8 /* ActivityTableViewController.m */,
 				C2FBCABB1C3FD2D100B244D8 /* ActivityModel.h */,
@@ -448,16 +494,12 @@
 		C2FBCAA61C3FCB0D00B244D8 /* Movie */ = {
 			isa = PBXGroup;
 			children = (
+				C2122A891C410CFD009A13F6 /* Model */,
+				C2122A881C410C41009A13F6 /* View */,
 				C2FBCAAD1C3FCB9B00B244D8 /* MovieTableViewController.h */,
 				C2FBCAAE1C3FCB9B00B244D8 /* MovieTableViewController.m */,
-				C2FBCAF91C3FE80500B244D8 /* MovieModel.h */,
-				C2FBCAFA1C3FE80500B244D8 /* MovieModel.m */,
-				C2FBCAFF1C3FE83F00B244D8 /* MovieTableViewCell.h */,
-				C2FBCB001C3FE83F00B244D8 /* MovieTableViewCell.m */,
-				C2FBCB011C3FE83F00B244D8 /* MovieTableViewCell.xib */,
-				C2FBCB071C3FF16600B244D8 /* MovieCollectionViewCell.h */,
-				C2FBCB081C3FF16600B244D8 /* MovieCollectionViewCell.m */,
-				C2FBCB091C3FF16600B244D8 /* MovieCollectionViewCell.xib */,
+				C2122A851C410A34009A13F6 /* MovieNextViewController.h */,
+				C2122A861C410A34009A13F6 /* MovieNextViewController.m */,
 			);
 			name = Movie;
 			sourceTree = "<group>";
@@ -484,10 +526,8 @@
 				C2FBCAB51C3FCBB100B244D8 /* MyTableViewController.m */,
 				C2FBCB151C3FFCB400B244D8 /* LoginViewController.h */,
 				C2FBCB161C3FFCB400B244D8 /* LoginViewController.m */,
-				C2FBCB181C3FFCC500B244D8 /* RegisterViewController.h */,
-				C2FBCB191C3FFCC500B244D8 /* RegisterViewController.m */,
-				C25779AC1C40974F00EC4466 /* User.h */,
-				C25779AD1C40974F00EC4466 /* User.m */,
+				C2122A7B1C40D0E7009A13F6 /* RegistTableViewController.h */,
+				C2122A7C1C40D0E7009A13F6 /* RegistTableViewController.m */,
 			);
 			name = My;
 			sourceTree = "<group>";
@@ -518,6 +558,8 @@
 		C2FBCAC31C3FD98900B244D8 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				C2122A7E1C40DE9F009A13F6 /* MBProgressHUD.h */,
+				C2122A7F1C40DE9F009A13F6 /* MBProgressHUD.m */,
 				C2FBCB1B1C40017F00B244D8 /* FMDB */,
 				C2FBCAC41C3FD99D00B244D8 /* SDWebImage */,
 			);
@@ -601,6 +643,8 @@
 		C2FBCB361C40028000B244D8 /* Favourite */ = {
 			isa = PBXGroup;
 			children = (
+				C25779AC1C40974F00EC4466 /* User.h */,
+				C25779AD1C40974F00EC4466 /* User.m */,
 				C2FBCB331C40027900B244D8 /* FavouriteTableViewController.h */,
 				C2FBCB341C40027900B244D8 /* FavouriteTableViewController.m */,
 				C2FBCB371C4002CD00B244D8 /* FavouriteModel.h */,
@@ -676,7 +720,7 @@
 				C2FBCA941C3FC9FF00B244D8 /* btn_nav_list@2x.png in Resources */,
 				C2FBCA8B1C3FC9FF00B244D8 /* placeHolder.png in Resources */,
 				C2FBCA881C3FC9FF00B244D8 /* icon_date@2x.png in Resources */,
-				C2FBCAA31C3FC9FF00B244D8 /* icon@2x.png in Resources */,
+				C2FBCAA31C3FC9FF00B244D8 /* i0con@2x.png in Resources */,
 				C2FBCAA21C3FC9FF00B244D8 /* bg@2x.png in Resources */,
 				C2FBCA221C3FC84E00B244D8 /* LaunchScreen.storyboard in Resources */,
 				C2FBCA891C3FC9FF00B244D8 /* icon_spot.png in Resources */,
@@ -729,6 +773,7 @@
 				C2FBCAAC1C3FCB9100B244D8 /* ActivityTableViewController.m in Sources */,
 				C2FBCAE61C3FD99D00B244D8 /* MKAnnotationView+WebCache.m in Sources */,
 				C2FBCA171C3FC84D00B244D8 /* AppDelegate.m in Sources */,
+				C2122A7D1C40D0E7009A13F6 /* RegistTableViewController.m in Sources */,
 				C2FBCB0A1C3FF16600B244D8 /* MovieCollectionViewCell.m in Sources */,
 				C2FBCAEE1C3FD99D00B244D8 /* SDWebImagePrefetcher.m in Sources */,
 				C2FBCB351C40027900B244D8 /* FavouriteTableViewController.m in Sources */,
@@ -745,6 +790,7 @@
 				C2FBCAEA1C3FD99D00B244D8 /* SDWebImageDecoder.m in Sources */,
 				C2FBCB2B1C40017F00B244D8 /* FMDatabasePool.m in Sources */,
 				C2FBCAF11C3FD99D00B244D8 /* UIImage+MultiFormat.m in Sources */,
+				C2122A841C40F2DE009A13F6 /* ActivityDetailViewController.m in Sources */,
 				C2FBCAF21C3FD99D00B244D8 /* UIImage+WebP.m in Sources */,
 				C2FBCAEC1C3FD99D00B244D8 /* SDWebImageDownloaderOperation.m in Sources */,
 				C2FBCAF51C3FD99D00B244D8 /* UIView+WebCacheOperation.m in Sources */,
@@ -753,14 +799,16 @@
 				C2FBCB2A1C40017F00B244D8 /* FMDatabaseAdditions.m in Sources */,
 				C2FBCAFB1C3FE80500B244D8 /* MovieModel.m in Sources */,
 				C2FBCAF01C3FD99D00B244D8 /* UIImage+GIF.m in Sources */,
+				C2122A8C1C410D24009A13F6 /* MovieDetal.m in Sources */,
 				C2FBCB2D1C40017F00B244D8 /* FMResultSet.m in Sources */,
 				C2FBCB291C40017F00B244D8 /* FMDatabase.m in Sources */,
+				C2122A801C40DE9F009A13F6 /* MBProgressHUD.m in Sources */,
 				C2FBCA141C3FC84D00B244D8 /* main.m in Sources */,
-				C2FBCB1A1C3FFCC500B244D8 /* RegisterViewController.m in Sources */,
 				C2FBCABA1C3FCD8200B244D8 /* NetWorkHelper.m in Sources */,
 				C2FBCAB61C3FCBB100B244D8 /* MyTableViewController.m in Sources */,
 				C2FBCAF31C3FD99D00B244D8 /* UIImageView+HighlightedWebCache.m in Sources */,
 				C2FBCB021C3FE83F00B244D8 /* MovieTableViewCell.m in Sources */,
+				C2122A871C410A34009A13F6 /* MovieNextViewController.m in Sources */,
 				C2FBCAB21C3FCBA400B244D8 /* CinemaTableViewController.m in Sources */,
 				C2FBCAE81C3FD99D00B244D8 /* SDImageCache.m in Sources */,
 				C2FBCAEF1C3FD99D00B244D8 /* UIButton+WebCache.m in Sources */,
@@ -881,9 +929,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DouBan-PreFix.pch";
 				INFOPLIST_FILE = "DouBan-Today/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yukon.DouBan-Today";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -894,9 +944,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DouBan-PreFix.pch";
 				INFOPLIST_FILE = "DouBan-Today/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yukon.DouBan-Today";
 				PRODUCT_NAME = "$(TARGET_NAME)";

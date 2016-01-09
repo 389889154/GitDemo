@@ -19,7 +19,7 @@
 
 
 - (void) addUser : (User *)model;
-- (BOOL) hasExist : (NSString *) username;
-
+- (BOOL) hasExist : (NSString *) username : (NSString *)pwd;
++ (BOOL) isOnline ;
 @end
 

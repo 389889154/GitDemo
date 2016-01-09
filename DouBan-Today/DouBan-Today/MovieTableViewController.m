@@ -10,6 +10,7 @@
 #import "MovieModel.h"
 #import "MovieTableViewCell.h"
 #import "MovieCollectionViewCell.h"
+#import "MovieNextViewController.h"
 @interface MovieTableViewController () <UITableViewDataSource,UITableViewDelegate,UICollectionViewDataSource,UICollectionViewDelegate>
 @property (nonatomic, strong) NSMutableArray *items;
 @property (nonatomic, strong) UITableView *tableView;
@@ -63,7 +64,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   
+    id hud = [[NetWorkHelper shareInstance] createHud];
     kWeakSelf(weakSelf);
     [[NetWorkHelper shareInstance] getDataWithUrlString:movieUrl success:^(NSDictionary *dic) {
         
@@ -72,8 +73,8 @@
             MovieModel *model = [MovieModel movieWithDic:dic];
             [weakSelf.items addObject:model];
         }
-        
         [weakSelf.tableView reloadData];
+        [hud removeFromSuperview];
     } fail:^{
         // 没写
     }];
@@ -99,8 +100,18 @@
     
     return cell;
 }
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+
+    MovieTableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
+    [self nextVC:indexPath :cell.iconView.image];
+}
 
 #pragma mark -- Collection DataSource 
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    MovieCollectionViewCell *cell = (MovieCollectionViewCell *)[self.collectionView cellForItemAtIndexPath:indexPath];
+    [self nextVC:indexPath :cell.iconView.image];
+}
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
 
@@ -128,9 +139,16 @@
         [self.view addSubview:self.tableView];
     }
     
-    
-  
-    
+}
+
+- (void)nextVC:(NSIndexPath *)indexPath :(UIImage *)img{
+
+    MovieNextViewController *VC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"movieNext"];
+    MovieModel *model = _items[indexPath.row];
+    VC.movieId = model.movieid;
+    VC.img = img;
+    VC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController showViewController:VC sender:nil];
 }
 
 @end

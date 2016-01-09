@@ -7,20 +7,26 @@
 //
 
 #import "MyTableViewController.h"
-
+#import "User.h"
+#import "LoginViewController.h"
 @interface MyTableViewController ()
 @property (nonatomic ,assign) BOOL isLogin;
+@property (nonatomic, strong) NSString *itemTitle;
+@property (nonatomic, strong) UIBarButtonItem *barItem;
 @end
 
 @implementation MyTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self check];
     self.view.backgroundColor = kThemeColor;
     self.tableView.rowHeight = 60.f;
     self.tableView.scrollEnabled = NO;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"注销" style:UIBarButtonItemStyleDone target:self action:@selector(rightAction:)];
+    _barItem = [[UIBarButtonItem alloc]initWithTitle:_itemTitle style:UIBarButtonItemStyleDone target:self action:@selector(rightAction:)];
+    self.navigationItem.rightBarButtonItem = _barItem;
+    
 }
 
 
@@ -45,72 +51,43 @@
 }
 
 - (void)rightAction:(UIBarButtonItem *)sender {
-    _isLogin = !_isLogin;
-    if (_isLogin) {
+    if ([self.barItem.title isEqualToString:@"注销"]) {
         UIAlertController *resignVC = [UIAlertController alertControllerWithTitle:@"提 示" message:@"是否确认注销" preferredStyle:UIAlertControllerStyleAlert];
         [resignVC addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil]];
         [resignVC addAction:[UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-            sender.title = @"登录";
+            [[NSUserDefaults standardUserDefaults] setObject:@"offLine" forKey:kUserStatus];
+            self.barItem.title = @"登录";
         }]];
         [self presentViewController:resignVC animated:YES completion:nil];
         
     } else {
-    
+        
         UIAlertController *loginVC = [UIAlertController alertControllerWithTitle:@"提 示" message:@"是否确认登录" preferredStyle:UIAlertControllerStyleAlert];
         [loginVC addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil]];
         [loginVC addAction:[UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-            sender.title = @"注销";
+            
+            LoginViewController *lvc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"login"];
+            lvc.hidesBottomBarWhenPushed = YES;
+            [self.navigationController showViewController:lvc sender:nil];
+            self.barItem.title = @"注销";
         }]];
         [self presentViewController:loginVC animated:YES completion:nil];
     }
-
-    
-    
  
-    
 }
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+
+- (void)viewWillAppear:(BOOL)animated {
+
+    [self check];
 }
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+- (void)check {
+    if ([DataHelper isOnline]) {
+        _isLogin = YES;
+        self.barItem.title = @"注销";
+    }else {
+        _isLogin = NO;
+        self.barItem.title = @"登录";
+    }
 }
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 @end

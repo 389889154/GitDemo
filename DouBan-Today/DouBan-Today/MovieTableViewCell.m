@@ -9,7 +9,7 @@
 #import "MovieTableViewCell.h"
 #import "MovieModel.h"
 @interface MovieTableViewCell ()
-@property (weak, nonatomic) IBOutlet UIImageView *iconView;
+
 @property (weak, nonatomic) IBOutlet UILabel *titileLabel;
 
 @end
