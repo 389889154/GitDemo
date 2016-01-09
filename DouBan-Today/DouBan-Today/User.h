@@ -8,11 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-#define username username;
-#define password password;
-#define phoneNum phoneNum;
-
-
 @interface User : NSObject
 
 @property (nonatomic, copy) NSString * username;

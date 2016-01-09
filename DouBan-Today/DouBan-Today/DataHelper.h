@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-@class FavouriteModel;
+@class FavouriteModel,User;
 @interface DataHelper : NSObject
 
 
@@ -18,7 +18,8 @@
 - (BOOL) queryFavouriteWithName : (NSString *)name;
 
 
-- (void) addUser : ()
+- (void) addUser : (User *)model;
+- (BOOL) hasExist : (NSString *) username;
 
 @end
 
