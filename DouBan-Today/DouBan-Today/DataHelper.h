@@ -13,7 +13,7 @@
 
 + (instancetype) shareInstance;
 
-- (void) addFavouriteRecord : (FavouriteModel *)model;
+- (void) addFavouriteRecord : (FavouriteModel *)model username:(NSString *)username;
 - (void) deleteFavouriteRecord :(FavouriteModel *)model;
 - (BOOL) queryFavouriteWithName : (NSString *)name;
 

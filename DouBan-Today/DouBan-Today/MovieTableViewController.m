@@ -27,11 +27,11 @@
         CGSize size = self.view.frame.size;
         
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
-        layout.itemSize = CGSizeMake((size.width- 20)/3, (size.height - 20)/3);
+        layout.itemSize = CGSizeMake((size.width- 20)/3, (size.height - 20 -64 -49)/3);
         layout.minimumInteritemSpacing = 5.f;
         layout.minimumLineSpacing = 5.f;
         layout.sectionInset = UIEdgeInsetsMake(5, 5, 5, 5);
-        _collectionView = [[UICollectionView alloc]initWithFrame:self.view.frame collectionViewLayout:layout];
+        _collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 64, size.width, size.height- 64 - 49) collectionViewLayout:layout];
         _collectionView.bounces = NO;
         _collectionView.backgroundColor = [UIColor whiteColor];
         _collectionView.delegate = self;

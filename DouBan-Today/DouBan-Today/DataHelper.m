@@ -33,8 +33,9 @@ static FMDatabaseQueue *_queue;
     _queue = [[FMDatabaseQueue alloc]initWithPath:[docPath stringByAppendingPathComponent:@"DB.sqlite"]];
     [_queue inDatabase:^(FMDatabase *db) {
        BOOL result = [db executeUpdate:@"CREATE TABLE if not exists t_user (uid INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL UNIQUE, username TEXT, password TEXT, telNum TEXT, email TEXT)"];
-        if (!result) {
         
+      BOOL result2 = [db executeUpdate:@"create table if not exists t_movie (mid INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL UNIQUE,username text, aData blob)"];
+        if (!(result&&result2)) {
             NSLog(@"creat fail");
         }
        
@@ -42,10 +43,10 @@ static FMDatabaseQueue *_queue;
     NSLog(@"%@",NSHomeDirectory());
 }
 
-- (void) addFavouriteRecord : (FavouriteModel *)model {
-    
+- (void) addFavouriteRecord : (FavouriteModel *)model username:(NSString *)username {
     
 }
+
 - (void) deleteFavouriteRecord :(FavouriteModel *)model {}
 - (BOOL) queryFavouriteWithName : (NSString *)name {
     
@@ -76,4 +77,6 @@ static FMDatabaseQueue *_queue;
 + (BOOL) isOnline  {
     return [[[NSUserDefaults standardUserDefaults] objectForKey:kUserStatus] isEqualToString:@"online"];
 }
+
+- (NSData *)archiever:(id)
 @end

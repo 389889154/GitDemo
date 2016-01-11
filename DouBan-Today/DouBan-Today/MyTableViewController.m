@@ -73,11 +73,11 @@
         }]];
         [self presentViewController:loginVC animated:YES completion:nil];
     }
- 
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-
+    
     [self check];
 }
 
@@ -89,5 +89,37 @@
         _isLogin = NO;
         self.barItem.title = @"登录";
     }
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    switch (indexPath.row) {
+        case 0:
+            break;
+        case 1:
+            break;
+        case 2:
+            [self clear];
+            break;
+        default:
+            break;
+    }
+}
+
+- (void)clear {
+    
+    CGFloat size = [[SDImageCache sharedImageCache] getSize];
+    size = size/1024.0/1024.0;
+ 
+    UIAlertController *clearVC = [UIAlertController alertControllerWithTitle:@"提示" message:[NSString stringWithFormat:@"清除图片缓存 约占%3.2f M",size] preferredStyle:UIAlertControllerStyleAlert];
+    [clearVC addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleDestructive handler:nil]];
+    [clearVC addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    
+        [[SDWebImageManager sharedManager].imageCache cleanDisk];
+        [[SDWebImageManager sharedManager].imageCache clearMemory];
+        [[NSURLCache sharedURLCache] removeAllCachedResponses];
+    }]];
+    
+    [self presentViewController:clearVC animated:YES completion:nil];
 }
 @end

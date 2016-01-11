@@ -30,6 +30,7 @@
     NSString *beginTime = [model.begin_time substringFromIndex:5];
     NSString *endTime = [model.end_time substringFromIndex:5];
     _titleLabel.text = model.title;
+    _timeLabel.textColor = [UIColor whiteColor];
     _timeLabel.text = [NSString stringWithFormat:@"%@ -- %@",beginTime,endTime];
     _locLabel.text = model.address;
     

@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface FavouriteTableViewController : UITableViewController
-
+@property (nonatomic, strong) NSString *collectionType;
 @end

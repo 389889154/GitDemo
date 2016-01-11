@@ -12,6 +12,8 @@
 		C2122A841C40F2DE009A13F6 /* ActivityDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2122A831C40F2DE009A13F6 /* ActivityDetailViewController.m */; };
 		C2122A871C410A34009A13F6 /* MovieNextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2122A861C410A34009A13F6 /* MovieNextViewController.m */; };
 		C2122A8C1C410D24009A13F6 /* MovieDetal.m in Sources */ = {isa = PBXBuildFile; fileRef = C2122A8B1C410D24009A13F6 /* MovieDetal.m */; };
+		C2122A901C41236C009A13F6 /* CollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2122A8E1C41236C009A13F6 /* CollectionCell.m */; };
+		C2122A911C41236C009A13F6 /* CollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2122A8F1C41236C009A13F6 /* CollectionCell.xib */; };
 		C25779AE1C40974F00EC4466 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = C25779AD1C40974F00EC4466 /* User.m */; };
 		C2FBCA141C3FC84D00B244D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2FBCA131C3FC84D00B244D8 /* main.m */; };
 		C2FBCA171C3FC84D00B244D8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2FBCA161C3FC84D00B244D8 /* AppDelegate.m */; };
@@ -117,6 +119,9 @@
 		C2122A861C410A34009A13F6 /* MovieNextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieNextViewController.m; sourceTree = "<group>"; };
 		C2122A8A1C410D24009A13F6 /* MovieDetal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieDetal.h; sourceTree = "<group>"; };
 		C2122A8B1C410D24009A13F6 /* MovieDetal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieDetal.m; sourceTree = "<group>"; };
+		C2122A8D1C41236C009A13F6 /* CollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionCell.h; sourceTree = "<group>"; };
+		C2122A8E1C41236C009A13F6 /* CollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionCell.m; sourceTree = "<group>"; };
+		C2122A8F1C41236C009A13F6 /* CollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionCell.xib; sourceTree = "<group>"; };
 		C25779AC1C40974F00EC4466 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		C25779AD1C40974F00EC4466 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		C2FBCA0F1C3FC84D00B244D8 /* DouBan-Today.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DouBan-Today.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -649,6 +654,9 @@
 				C2FBCB341C40027900B244D8 /* FavouriteTableViewController.m */,
 				C2FBCB371C4002CD00B244D8 /* FavouriteModel.h */,
 				C2FBCB381C4002CD00B244D8 /* FavouriteModel.m */,
+				C2122A8D1C41236C009A13F6 /* CollectionCell.h */,
+				C2122A8E1C41236C009A13F6 /* CollectionCell.m */,
+				C2122A8F1C41236C009A13F6 /* CollectionCell.xib */,
 			);
 			name = Favourite;
 			sourceTree = "<group>";
@@ -725,6 +733,7 @@
 				C2FBCA221C3FC84E00B244D8 /* LaunchScreen.storyboard in Resources */,
 				C2FBCA891C3FC9FF00B244D8 /* icon_spot.png in Resources */,
 				C2FBCA961C3FC9FF00B244D8 /* btn_nav_share@2x.png in Resources */,
+				C2122A911C41236C009A13F6 /* CollectionCell.xib in Resources */,
 				C2FBCA9C1C3FC9FF00B244D8 /* user.png in Resources */,
 				C2FBCA831C3FC9FF00B244D8 /* bg_share_large.png in Resources */,
 				C2FBCA841C3FC9FF00B244D8 /* bg_share_large@2x.png in Resources */,
@@ -814,6 +823,7 @@
 				C2FBCAEF1C3FD99D00B244D8 /* UIButton+WebCache.m in Sources */,
 				C2FBCAE71C3FD99D00B244D8 /* NSData+ImageContentType.m in Sources */,
 				C2FBCB391C4002CD00B244D8 /* FavouriteModel.m in Sources */,
+				C2122A901C41236C009A13F6 /* CollectionCell.m in Sources */,
 				C2FBCB131C3FF66500B244D8 /* CinemaModel.m in Sources */,
 				C2FBCA2C1C3FC97B00B244D8 /* RootViewController.m in Sources */,
 			);
